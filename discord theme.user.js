@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         discord theme
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Creates and sets a custom theme for discord
 // @author       SeeGreatness
 // @match        https://*.discordapp.com/*
