@@ -8,6 +8,8 @@
 // @match        https://discordapp.com/*
 // @match        https://discordapp.com/channels/*
 // @grant        none
+// @updateURL    https://github.com/SeeGreatness/DiscordDarkTheme/raw/master/discord%20theme.user.js
+// @downloadURL  https://github.com/SeeGreatness/DiscordDarkTheme
 // ==/UserScript==
 
 (function() {
