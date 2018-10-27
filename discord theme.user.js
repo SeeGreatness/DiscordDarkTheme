@@ -4,7 +4,7 @@
 // @homepage     https://github.com/SeeGreatness/DiscordDarkTheme
 // @homepageURL  https://github.com/SeeGreatness/DiscordDarkTheme
 // @website      http://SeeGreatness.ca
-// @version      0.3
+// @version      0.4
 // @icon         https://discordapp.com/assets/e05ead6e6ebc08df9291738d0aa6986d.png
 // @iconURL      https://discordapp.com/assets/e05ead6e6ebc08df9291738d0aa6986d.png
 // @defaulticon  https://discordapp.com/assets/e05ead6e6ebc08df9291738d0aa6986d.png
