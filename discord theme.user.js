@@ -1,15 +1,25 @@
 // ==UserScript==
 // @name         discord theme
-// @namespace    http://tampermonkey.net/
+// @namespace    the seegreatness discord theme
+// @homepage     https://github.com/SeeGreatness/DiscordDarkTheme
+// @homepageURL  https://github.com/SeeGreatness/DiscordDarkTheme
+// @website      http://SeeGreatness.ca
 // @version      0.3
+// @icon         https://discordapp.com/assets/e05ead6e6ebc08df9291738d0aa6986d.png
+// @iconURL      https://discordapp.com/assets/e05ead6e6ebc08df9291738d0aa6986d.png
+// @defaulticon  https://discordapp.com/assets/e05ead6e6ebc08df9291738d0aa6986d.png
 // @description  Creates and sets a custom theme for discord
 // @author       SeeGreatness
 // @match        https://*.discordapp.com/*
 // @match        https://discordapp.com/*
 // @match        https://discordapp.com/channels/*
+// @include      *
 // @grant        none
 // @updateURL    https://github.com/SeeGreatness/DiscordDarkTheme/raw/master/discord%20theme.user.js
 // @downloadURL  https://github.com/SeeGreatness/DiscordDarkTheme/raw/master/discord%20theme.user.js
+// @source       https://github.com/SeeGreatness/DiscordDarkTheme/raw/master/discord%20theme.user.js
+// @supportURL   https://GΛLΛXY-CΛT.ca/#6969
+// @run-at       document-idle
 // ==/UserScript==
 
 (function() {
