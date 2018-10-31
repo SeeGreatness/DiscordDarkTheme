@@ -1,0 +1,110 @@
+@-moz-document domain("discordapp.com")
+{
+  body, .typeWindows-15E0Ys, .app-XZYfmp,
+.layers-20RVFW, .layer-kosS71,
+.ui-standard-sidebar-view, .sidebar-region,
+.content-region, .scroller-wrap, .content-column,
+.CodeMirror, .CodeMirror-scroll, .flex-lFgbSz,
+.chat, .channels-3g2vYe, .guilds-wrapper,
+#bd-customcss-detach-container,
+#bd-customcss-detach-editor,
+#bd-customcss-innerpane, .da-flex,
+#bd-customcss-attach-controls,
+.CodeMirror, .CodeMirror-scroll,
+.chat, .chat .content, .messages-wrapper,
+.chat .messages, .chat form,
+.membersWrap-3wRngy,
+.channels-Ie2l6A,
+.layer-3QrUeG,
+.layers-3iHuyZ.flex-vertical,
+.platform-win,
+.scrollerWrap-2uBjct, .members-1bid1J,
+#friends, .friends-table, .da-activityFeed,
+.da-members, .da-messages, .da-messagesWrapper,
+.da-content, .da-chat, .flex-vertical form,
+.theme-dark .members-1998pB,
+.da-scrollerFade > div,
+.theme-dark .applicationStore-1pNvnv,
+.theme-dark .itemBackground-1jfD8p:before
+  {
+    background-color: rgba(0,0,0,0) !important;
+  }
+
+  #app-mount, .da-firefoxFixScrollFlex,
+.theme-dark, .da-headerBar,
+.flexChild-faoVW3
+  {
+    background-color: rgba(0,0,0,0.3) !important;
+  }
+
+  .theme-dark .container-2Thooq,
+.da-searchBar
+  {
+    background-color: rgba(0,0,0,0.5) !important;
+  }
+
+  .guildsWrapper-5TJh6A,
+.da-titleBar
+  {
+    background-color: rgba(0,0,0,0.65) !important;
+  }
+
+  .da-left, .da-right
+  {
+    background-color: #000 !important;
+    border-radius: 50%;
+  }
+
+  .base-3dtUhz,
+.guildsWrapper-5TJh6A
+  {
+    border-radius: 0 !important;
+  }
+
+  .app,
+.callout-backdrop,
+body
+  {
+    background-color: #212121 !important;
+    background-image: url(/*[[image]]*/) !important;
+    background-size: cover !important;
+  }
+
+  .da-titleBar
+  {
+    height: 32px;
+  }
+
+  .da-wordmark
+  {
+    margin-top: 5px;
+  }
+
+  .titleBar-3_fDwJ .wordmark-2L03Wr
+  {
+    display: none;
+  }
+
+  .titleBar-3_fDwJ
+  {
+    height: 32px !important;
+    margin-top: 0 !important;
+  }
+
+  .da-winButtonClose:hover,
+.da-winButtonMinMax:hover
+  {
+    background-color: transparent;
+  }
+
+  .typeWindows-1za-n7
+  {
+    margin-top: 0;
+    padding: 4px;
+  }
+
+  .da-winButtonMinMax, .da-winButtonClose
+  {
+    margin: 8px;
+  }
+}
