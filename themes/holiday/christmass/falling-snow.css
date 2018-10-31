@@ -1,0 +1,365 @@
+/*
+ * Christmas CSS
+ * - A better dark theme for Discord (christmasified)
+ * by foxbot <foxbot.me>
+ *
+ * Best used with BeautifulDiscord (github.com/leovoel/BeautifulDiscord)
+ *
+ */
+
+/* ----- BEGIN CONFIG SECTION ----- */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import '//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css';
+
+:root {
+	/*--background: #191919;*/
+	--background: #190000;
+	/*--accent-dark: #111111;*/
+	--accent-dark: #190000;
+	/*--accent: #2B2B2B;*/
+	--accent: #012312;
+	/*--accent-light: #EDEDED;*/
+	--accent-light: #114c28;
+	--ping-r: 19;
+	--ping-g: 198;
+	--ping-b: 82;
+	--ping: rgba(var(--ping-r), var(--ping-g), var(--ping-b), 1);
+	--ping-highlight: rgba(var(--ping-r), var(--ping-g), var(--ping-b), 0.15);
+	--font: 'Roboto';
+	--mono: 'Hack';
+}
+
+/* ----- END CONFIG SECTION ----- */
+
+@keyframes text-fade {
+	0% { color: rgba(255,255,255,0.3); }
+	100% { color: rgba(255,255,255,1.0); }
+}
+
+body {
+	font-family: var(--font) !important;
+}
+
+/* Guild Styles */
+
+.guilds-wrapper > * {
+	background-color: var(--accent-dark) !important;
+}
+
+.new-messages-indicator {
+	background-color: var(--ping) !important;
+}
+
+.guild-header header  {
+	background-color: var(--background) !important;
+	font-family: var(--font) !important;
+}
+
+/* Channel Styles */
+
+.channels-wrap {
+	background-color: var(--background) !important;
+}
+
+.guild-channels {
+	background-color: var(--background) !important;
+}
+
+.channel {
+	background-color: var(--background) !important;
+}
+
+.guild-channels .channel-text.selected {
+	background: linear-gradient(to right, var(--accent-dark) 85%, var(--background)) !important;
+}
+
+.guild-channels header {
+	opacity: 1.0 !important;
+	color: rgba(255,255,255,0.3) !important;
+}
+
+.guild-channels header :hover {
+	animation: text-fade 0.1s linear forwards; 
+}
+
+.guild-channels .channel-text:hover {
+	background: linear-gradient(to right, var(--accent-dark) 85%, var(--background)) !important; 
+}
+
+/* Private Channels */
+
+.channel.selected.private {
+	background: linear-gradient(to right, var(--accent-dark) 85%, var(--background)) !important;
+}
+
+.channel.private:hover {
+	background: linear-gradient(to right, var(--accent-dark) 85%, var(--background)) !important; 
+}
+
+.channel.selected.private::before {
+	border-left: 2px solid var(--ping) !important;
+}
+
+.channel.private:hover::before {
+	border-left: 2px solid var(--ping-highlight) !important;	
+}
+
+.private-channels .scroller {
+	background-color: var(--background) !important;
+}
+
+.search-bar {
+	background-color: var(--background) !important;
+	box-shadow: 0px;
+}
+
+/* Lower Account Panel */
+
+.account {
+	background-color: var(--accent-dark) !important;
+	border-top: 1px solid var(--accent-dark) !important;
+}
+
+.account > .btn-group > .btn {
+	background-color: var(--background) !important;
+}
+
+/* Voice */
+
+#voice-connection { 
+	background-color: var(--background) !important;
+	border-top: 1px solid var(--background) !important;
+}
+
+#voice-connection > .btn-group > .btn {
+	background-color: var(--background) !important;
+}
+
+/* Chat Styles */
+
+.theme-dark .chat > * {
+	background-color: var(--background) !important;
+}
+
+.messages-wrapper {
+	background-color: var(--background) !important;
+}
+
+.typing {
+	background-color: var(--background) !important;
+}
+
+.new-messages-bar {
+	background-color: var(--ping) !important;
+}
+
+.scroller-wrap .scroller .scrollbar {
+	background-color: var(--background) !important;
+}
+
+.divider.divider-red > div {
+	background-color: var(--ping) !important;
+}
+.divider.divider-red > span {
+	color: var(--ping) !important;
+	background-color: var(--background) !important;
+}
+
+.channel-textarea-inner {
+	background-color: var(--background) !important;
+	border-color: var(--accent) !important;
+}
+.channel-textarea-inner > textarea {
+	background-color: var(--background) !important;
+	font-family: var(--font) !important;
+}
+
+code.inline {
+	background-color: var(--accent) !important;
+	font-family: var(--mono) !important;
+}
+code.hljs {
+	background-color: var(--accent) !important;
+	font-family: var(--mono) !important;
+}
+
+.mentioned .message-text:after {
+	background: var(--ping) !important;
+	border-left: 4px solid var(--ping) !important;
+}
+.mentioned .message-text {
+	background: var(--ping-highlight) !important;
+}
+
+/* Chat Scrollbar */
+.scroller-wrap ::-webkit-scrollbar-thumb {
+	background-color: var(--accent-dark) !important;
+	border-color: var(--background) !important;
+}
+.scroller-wrap ::-webkit-scrollbar-track-piece {
+	background-color: var(--background) !important;
+	border-color: var(--background) !important;
+}
+
+/* Channel Member Sidebar */
+
+.channel-members {
+	background-color: var(--background) !important;
+}
+
+.theme-dark .channel-members .member:hover {
+	background: linear-gradient(to right, var(--accent-dark) 85%, var(--background)) !important;
+}
+
+.theme-dark .channel-members .member.popout-open {
+	background: linear-gradient(to right, var(--accent-dark) 85%, var(--background)) !important;
+}
+
+/* Popups */
+
+.popout-menu {
+	background-color: var(--accent-dark) !important;
+}
+.popout-menu .popout-menu-separator {
+	border-bottom: 1px solid var(--background) !important;
+}
+
+.popout-menu .popout-menu-item:hover {
+	background-color: var(--accent) !important;
+}
+.popout-menu .popout-menu-item:hover.invite {
+	color: var(--ping) !important;
+}
+
+/* Settings */
+.settings-panel {
+	background-color: var(--accent-dark) !important;
+}
+.settings-inner {
+	background-color: var(--accent-dark) !important;
+}
+.settings-actions {
+	background-color: var(--accent-dark) !important;
+}
+
+input {
+	background-color: var(--accent-dark) !important;
+	border-bottom: 1px solid var(--accent) !important;
+	color: var(--accent-light) !important;
+}
+
+input:focus {
+	border-bottom: 1px solid var(--ping) !important;
+}
+
+/* Modals TODO */
+
+.modal-inner .form > div {
+	background-color: var(--background) !important;
+	color: var(--accent-light);
+}
+
+.form .form-header {
+	border-bottom: 1px solid var(--accent) !important;
+	border-radius: 0px;
+}
+.form .form-actions {
+	border-top: 1px solid var(--accent) !important;
+}
+.form-header header {
+	color: var(--accent-light) !important;
+}
+
+.form-header .blurb {
+	color: var(--accent-light) !important;
+}
+.clipboard-input-inner > input {
+	background-color: var(--accent-dark) !important;
+	border: 1px solid var(--accent-dark) !important;
+}
+
+/* Emoji Picker */
+.emoji-picker {
+	background-color: var(--accent-dark) !important;
+}
+.emoji-picker .header .search-bar {
+	background-color: var(--accent-dark) !important;
+	color: var(--accent-light) !important;
+}
+.emoji-picker .sticky-header {
+	background-color: var(--accent-dark) !important;
+}
+
+/* Pin Modal */
+.messages-popout-wrap > * {
+	background-color: var(--accent-dark) !important;
+	border: 1px solid var(--accent) !important;
+}
+.messages-popout > .message-group {
+	background-color: var(--accent) !important;
+}
+
+/* Snow! */
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+.channel-members {
+	background: none !important;
+	background-image: url('https://discord.foxbot.me/snow/s1.png'), url('https://discord.foxbot.me/snow/s2.png'), url('https://discord.foxbot.me/snow/s3.png') !important;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite !important;
+	-moz-animation: snow 10s linear infinite !important;
+	-ms-animation: snow 10s linear infinite !important;
+	animation: snow 10s linear infinite !important;
+	filter: alpha(0.2);
+}
+.theme-dark .chat > * {
+	background-color: var(--background) !important;
+	background-image: url('https://discord.foxbot.me/snow/s1.png'), url('https://discord.foxbot.me/snow/s2.png'), url('https://discord.foxbot.me/snow/s3.png') !important;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite !important;
+	-moz-animation: snow 10s linear infinite !important;
+	-ms-animation: snow 10s linear infinite !important;
+	animation: snow 10s linear infinite !important;
+}
+.account {
+	background-color: var(--accent-dark) !important;
+	background-image: url('https://discord.foxbot.me/snow/s1.png'), url('https://discord.foxbot.me/snow/s2.png'), url('https://discord.foxbot.me/snow/s3.png') !important;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite !important;
+	-moz-animation: snow 10s linear infinite !important;
+	-ms-animation: snow 10s linear infinite !important;
+	animation: snow 10s linear infinite !important;
+}
+.guilds-wrapper > * {
+	background-color: var(--accent-dark) !important;
+	background-image: url('https://discord.foxbot.me/snow/s1.png'), url('https://discord.foxbot.me/snow/s2.png'), url('https://discord.foxbot.me/snow/s3.png') !important;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite !important;
+	-moz-animation: snow 10s linear infinite !important;
+	-ms-animation: snow 10s linear infinite !important;
+	animation: snow 10s linear infinite !important;
+}
+.messages-wrapper {
+	background-image: url('https://vignette2.wikia.nocookie.net/animaljam/images/4/41/Large_Transparent_Christmas_Tree_with_Red_Ribbon_Clipart.png/revision/latest?cb=20141203001635');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
