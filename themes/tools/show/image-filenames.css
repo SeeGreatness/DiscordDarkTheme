@@ -1,0 +1,38 @@
+@-moz-document domain("discordapp.com")
+{
+  .message-group .comment .attachment-image a
+  {
+    border-radius: 0;
+  }
+
+  .message-group .comment .attachment-image a img
+  {
+    border-radius: 3px;
+  }
+
+  .theme-light .attachment-image a
+  {
+    color: #737f8d;
+  }
+
+  .theme-dark .attachment-image a
+  {
+    color: hsla(0,0%,100%,.7);
+  }
+
+  .attachment-image a
+  {
+    overflow: hidden;
+  }
+
+  .attachment-image a/*[[ignore-default]]*/:after
+  {
+    content: attr(href);
+    font-family: monospace, monospace;
+    font-size: 1em;
+    margin-left: -77ch;
+    ;
+    margin-bottom: 2px;
+    display: block;
+  }
+}
